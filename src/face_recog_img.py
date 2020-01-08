@@ -1,5 +1,6 @@
 import os
 import sys
+import threading
 import time
 import face_recognition
 import concurrent.futures
@@ -11,6 +12,7 @@ import face_encoding
 
 
 def run(multi_proc=False):
+    thread_num = str(threading.get_ident())
     if os.path.exists("encodings_cnn.pkl") is False:
         print("[INFO] creating CNN encodings...")
         p1 = multiprocessing.Process(target=face_encoding.run, args=("cnn", True))
@@ -22,6 +24,7 @@ def run(multi_proc=False):
             face_encoding.animated_loading()
 
     print()
+    print("[INFO] Thread Number: ", thread_num)
     print("[INFO] loading encoding...")
     data = pickle.loads(open("encodings_cnn.temp.pkl", "rb").read())
 
@@ -38,12 +41,11 @@ def run(multi_proc=False):
         # for each face
 
         f1 = concurrent.futures.ProcessPoolExecutor().submit(face_recognition.face_locations, rgb, model="cnn")
-        while True:
-            if f1.done():
-                break
-            face_encoding.animated_loading("Recognizing faces...")
-        sys.stdout.flush()
-
+        # while True:
+        #     if f1.done():
+        #         break
+        #     face_encoding.animated_loading("Recognizing faces...")
+        # sys.stdout.flush()
         boxes = f1.result()     # face_recognition.face_locations(rgb, model="cnn")
         encodings = face_recognition.face_encodings(rgb, boxes)
 
@@ -91,18 +93,25 @@ def run(multi_proc=False):
             cv2.waitKey(0)
             cv2.destroyWindow("Image")
         elif len(names) > 0 and names[0] is not "Unknown":
-            fileName = iPath.split(os.path.sep)[-1]
+            fileName = iPath.split(os.path.sep)[-1].split(".")[0]
             path = "images/" + str(names[0]) + "/" + str(fileName) + ".png"
             os.replace(str(iPath), path)
 
     print("[INFO] creating new CNN encodings...")
-    p1 = multiprocessing.Process(target=face_encoding.run, args=("cnn", True))
-    p1.start()
-    # the_process = threading.Thread(name='process', target=face_encoding.run, args=["cnn", True])
-    # the_process.start()
-    time.sleep(5)
-    while p1.is_alive():
-        face_encoding.animated_loading()
+    face_encoding.run("cnn", True)
+    # p1 = multiprocessing.Process(target=face_encoding.run, args=("cnn", True))
+    # p1.start()
+    # # the_process = threading.Thread(name='process', target=face_encoding.run, args=["cnn", True])
+    # # the_process.start()
+    # if multi_proc is False:
+    #     time.sleep(5)
+    #     while p1.is_alive():
+    #         face_encoding.animated_loading()
+    # else:
+    #     while p1.is_alive():
+    #         pass
+
+    print("[INFO] Advanced Facial Recognition finished...")
 
 
 if __name__ == "__main__":

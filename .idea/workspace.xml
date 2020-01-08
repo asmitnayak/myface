@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9aa4cf48-8371-4a6c-a5a7-49de7b6b3dc4" name="Default Changelist" comment="" />
+    <list default="true" id="9aa4cf48-8371-4a6c-a5a7-49de7b6b3dc4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encodings_cnn.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/src/encodings_cnn.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encodings_hog.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/src/encodings_hog.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/face_recog_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/face_recog_img.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cmake/data/doc/cmake/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cmake/data/doc/cmake/html/search.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VZFL0QiO9kHD7Ac6QqDeSf67A2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,7 +34,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -34,7 +46,7 @@
       <recent name="C:\Users\Asmit Nayak\PycharmProjects\Face\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.face_recog_webcam">
+  <component name="RunManager" selected="Python.face_recog_img">
     <configuration name="alert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Face" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,8 +166,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.face_recog_webcam" />
         <item itemvalue="Python.face_recog_img" />
+        <item itemvalue="Python.face_recog_webcam" />
         <item itemvalue="Python.testing" />
         <item itemvalue="Python.face_encoding" />
         <item itemvalue="Python.alert" />
@@ -192,6 +204,8 @@
       <workItem from="1578058605566" duration="851000" />
       <workItem from="1578123310472" duration="12851000" />
       <workItem from="1578218380490" duration="15380000" />
+      <workItem from="1578338881591" duration="4272000" />
+      <workItem from="1578505862690" duration="231000" />
     </task>
     <servers />
   </component>
@@ -211,22 +225,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="500" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1578239507910" />
-    <state width="1493" height="250" key="GridCell.Tab.0.bottom" timestamp="1578242335966">
+    <state width="1493" height="318" key="GridCell.Tab.0.bottom" timestamp="1578346169533">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578242335966" />
-    <state width="1493" height="250" key="GridCell.Tab.0.center" timestamp="1578242335966">
+    <state width="1493" height="318" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578346169533" />
+    <state width="1493" height="318" key="GridCell.Tab.0.center" timestamp="1578346169533">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578242335966" />
-    <state width="1493" height="250" key="GridCell.Tab.0.left" timestamp="1578242335962">
+    <state width="1493" height="318" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578346169533" />
+    <state width="1493" height="318" key="GridCell.Tab.0.left" timestamp="1578346169533">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578242335962" />
-    <state width="1493" height="250" key="GridCell.Tab.0.right" timestamp="1578242335966">
+    <state width="1493" height="318" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578346169533" />
+    <state width="1493" height="318" key="GridCell.Tab.0.right" timestamp="1578346169533">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="250" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578242335966" />
+    <state width="1493" height="318" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578346169533" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1578241894502">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -247,10 +261,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="279" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1578226418068" />
-    <state x="466" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1578123403247">
+    <state x="466" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1578505862308">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="466" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1578123403247" />
+    <state x="466" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1578505862308" />
+    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1578341042182">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1578341042182" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -309,7 +327,9 @@
     <SUITE FILE_PATH="coverage/Face$face_recog_webcam__1_.coverage" NAME="face_recog_webcam (1) Coverage Results" MODIFIED="1578164880878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Face$face_recog_webcam.coverage" NAME="face_recog_webcam Coverage Results" MODIFIED="1578241894473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Face$face_encoding.coverage" NAME="face_encoding Coverage Results" MODIFIED="1578131937273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/myface$face_recog_img.coverage" NAME="face_recog_img Coverage Results" MODIFIED="1578342594212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Face$faces_train.coverage" NAME="faces-train Coverage Results" MODIFIED="1577816705942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/myface$face_recog_webcam.coverage" NAME="face_recog_webcam Coverage Results" MODIFIED="1578342413878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Face$face_recog_img.coverage" NAME="face_recog_img Coverage Results" MODIFIED="1578241717992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Face$faces.coverage" NAME="faces Coverage Results" MODIFIED="1577453865962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Face$testing.coverage" NAME="testing Coverage Results" MODIFIED="1578229973929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
