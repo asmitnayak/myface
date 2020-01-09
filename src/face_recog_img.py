@@ -89,9 +89,12 @@ def run(multi_proc=False):
         #                 0.75, (0, 255, 0), 2)
         if (len(names) == 0 or names[0] is "Unknown") and multi_proc is False:
             # show the output image
-            cv2.imshow("Image", image)
-            cv2.waitKey(0)
-            cv2.destroyWindow("Image")
+            fileName = iPath.split(os.path.sep)[-1].split(".")[0]
+            path = "Unknowns/" + str(fileName) + ".png"
+            os.replace(str(iPath), path)
+            # cv2.imshow("Image", image)
+            # cv2.waitKey(0)
+            # cv2.destroyWindow("Image")
         elif len(names) > 0 and names[0] is not "Unknown":
             fileName = iPath.split(os.path.sep)[-1].split(".")[0]
             path = "images/" + str(names[0]) + "/" + str(fileName) + ".png"
